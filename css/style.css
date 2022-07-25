@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Header Section  */
+    /* Start navbar section  */
+
+.lineones,.linetwos,.linethrees{
+    width: 25px;
+    height: 2px;
+
+    margin: 5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.crossxs .lineones {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.crossxs .linetwos{
+    opacity: 0;
+}
+
+.crossxs .linethrees {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-nav{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav{
+        margin-left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+    /* End navbar section */
+
+
+    /* Start Invite Buttons  */
+.inviteButtons {
+    padding: 8px 30px;
+
+    background: linear-gradient(45deg,#0eeda3,#3975db);
+
+    border: none;
+}
+    /* End Invite  Buttons  */
+
+    /* Start Banner Section  */
+.digitalBankingSections{
+    width: 100%;
+    height: 90vh;
+
+    background-image: url("./../asset/imgs/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 550px -250px;
+}
+
+.parentTexts{
+    position: relative;
+}
+
+.digitalBankingTexts{
+    width: 70%;
+
+    transform: translateY(-50%);
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+@media (max-width: 768px) {
+    .digitalBankingSections {
+        height: 50vh;
+        margin-top: 50px;
+
+        background-image: url("./../asset/imgs/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 270px -50px;
+    }
+
+    .digitalBankingTexts {
+        width: 100%;
+    }
+}
+    /* End Banner Section  */
+/* End Header Section  */
+
+/* Start Reason to Choose EasyBank Section  */
+.easyBankSections{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chooseEasybank {
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    .chooseEasybank {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+/* End Reason to Choose EasyBank Section  */
+
+/* Start Article Section  */
+.articleTexts {
+    width: 200px;
+    margin: auto;
+}
+
+.articleTexts small {
+    font-size: 12px;
+}
+
+.articleTexts p {
+    font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+    .currency img {
+        height: 144px;
+    }
+}
+
+@media (max-width: 992px) {
+    .currency img {
+        height: 104px;
+    }
+}
+
+@media (max-width: 768px) {
+    .currency img {
+        height: 164px;
+    }
+}
+/* End Article Section  */
+
+/* Start Footer Section  */
+.footerSections {
+    background-color: #2e1666;
+}
+
+@media (max-width: 992px) {
+    .list-unstyled {
+        margin-left: 30px;
+        margin-top: -5px !important;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .list-unstyled {
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+    }
+}
+
+/* End Footer Section  */
